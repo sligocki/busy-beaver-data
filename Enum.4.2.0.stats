@@ -1,0 +1,15 @@
+Enum.4.2.0
+
+Max Steps         =  107
+Max Symbols       =  13
+
+Number Total      =  620261
+Number Halt       =  183983
+Number Infinite   =  436269
+Number Undecided  =       0
+Number Unknown    =       9
+
+Percent Halt      =  29.662191
+Percent Infinite  =  70.336358
+Percent Undecided =   0.000000
+Percent Unknown   =   0.001451

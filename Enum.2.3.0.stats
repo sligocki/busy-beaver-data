@@ -1,0 +1,15 @@
+Enum.2.3.0
+
+Max Steps         =  38
+Max Symbols       =  9
+
+Number Total      =  2833
+Number Halt       =   866
+Number Infinite   =  1967
+Number Undecided  =     0
+Number Unknown    =     0
+
+Percent Halt      =  30.568302
+Percent Infinite  =  69.431698
+Percent Undecided =   0.000000
+Percent Unknown   =   0.000000

@@ -1,0 +1,15 @@
+Enum.2.4.0
+
+Max Steps         =  3932964
+Max Symbols       =  2050
+
+Number Total      =  348261
+Number Halt       =  116849
+Number Infinite   =  231285
+Number Undecided  =       0
+Number Unknown    =     127
+
+Percent Halt      =  33.552135
+Percent Infinite  =  66.411398
+Percent Undecided =   0.000000
+Percent Unknown   =   0.036467
