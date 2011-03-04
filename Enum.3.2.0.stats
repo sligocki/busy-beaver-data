@@ -6,10 +6,12 @@ Max Symbols       =  6
 Number Total      =  4057
 Number Halt       =  1379
 Number Infinite   =  2678
-Number Undecided  =     0
 Number Unknown    =     0
+Number Undecided  =     0
+Number Error      =     0
 
 Percent Halt      =  33.990633
 Percent Infinite  =  66.009367
-Percent Undecided =   0.000000
 Percent Unknown   =   0.000000
+Percent Undecided =   0.000000
+Percent Error     =   0.000000
