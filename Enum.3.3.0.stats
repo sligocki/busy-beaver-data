@@ -5,11 +5,13 @@ Max Symbols       =  374676383
 
 Number Total      =  28097605
 Number Halt       =   9140976
-Number Infinite   =  18947403
+Number Infinite   =  18947338
+Number Unknown    =      9291
 Number Undecided  =         0
-Number Unknown    =      9226
+Number Error      =         0
 
 Percent Halt      =  32.532937
-Percent Infinite  =  67.434228
+Percent Infinite  =  67.433997
+Percent Unknown   =   0.033067
 Percent Undecided =   0.000000
-Percent Unknown   =   0.032836
+Percent Error     =   0.000000
