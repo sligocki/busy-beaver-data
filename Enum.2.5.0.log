@@ -1,212 +1,219 @@
-Integrate_Data.py Enum.2.5.0.out Enum.2.5.0.halt Enum.2.5.0.infinite Enum.2.5.0.unknown Enum.2.5.0.error Enum.2.5.0.undecided 
-     1 | Wed Dec 29 02:19:31 PST 2010 - Wed Dec 29 02:19:48 PST 2010 | Initial_Filter --infile=Enum.2.5.0.unknown --outfile=Enum.2.5.0.out --log_number=1 | 316534 764277 0 1660222
-     2 | Wed Dec 29 02:19:48 PST 2010 - Wed Dec 29 02:20:34 PST 2010 | Dual_Machine_Filter.py --tape=100 --steps=100 | 0 118763 477142 -595905
-     3 | Wed Dec 29 02:20:34 PST 2010 - Wed Dec 29 02:22:34 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 477142 269559 1090197 1864328
-     4 | Wed Dec 29 02:22:34 PST 2010 - Wed Dec 29 02:26:38 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 1090197 486164 2184250 3620190
-     5 | Wed Dec 29 02:26:39 PST 2010 - Wed Dec 29 02:34:47 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 2184250 733770 3729119 5895087
-     6 | Wed Dec 29 02:34:49 PST 2010 - Wed Dec 29 02:46:15 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 3729119 1077305 5599890 8924805
-     7 | Wed Dec 29 02:46:17 PST 2010 - Wed Dec 29 03:00:09 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 5599890 907901 5507212 8605747
-     8 | Wed Dec 29 03:00:12 PST 2010 - Wed Dec 29 03:33:31 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 5507212 1293394 8308336 13216170
-     9 | Wed Dec 29 03:33:36 PST 2010 - Wed Dec 29 03:41:22 PST 2010 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | 8308336 0 0 0
-    10 | Wed Dec 29 03:41:26 PST 2010 - Wed Dec 29 04:37:10 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=2 | 0 21854071 10916 -21864987
-    11 | Wed Dec 29 04:37:13 PST 2010 - Wed Dec 29 04:45:23 PST 2010 | Reverse_Engineer_Filter.py | 0 2576242 0 -2576242
-    12 | Wed Dec 29 04:45:25 PST 2010 - Wed Dec 29 05:13:53 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=4 | 0 6696599 24108 -6720707
-    13 | Wed Dec 29 05:13:55 PST 2010 - Wed Dec 29 05:30:41 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=3 | 0 4113622 9525 -4123147
-    14 | Wed Dec 29 05:30:42 PST 2010 - Wed Dec 29 06:00:39 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL1 --size=1 --offset=0 | 0 1884341 0 -1884341
-    15 | Wed Dec 29 06:00:40 PST 2010 - Wed Dec 29 06:00:57 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 44549 0 0 12640
-    16 | Wed Dec 29 06:00:57 PST 2010 - Wed Dec 29 06:10:38 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=6 | 0 760277 37663 -797940
-    17 | Wed Dec 29 06:10:38 PST 2010 - Wed Dec 29 06:40:33 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL2 --size=2 --offset=0 | 0 2175837 0 -2175837
-    18 | Wed Dec 29 06:40:34 PST 2010 - Wed Dec 29 07:07:41 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=2 | 0 1507831 90647 -1598478
-    19 | Wed Dec 29 07:07:41 PST 2010 - Wed Dec 29 07:10:43 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=5 | 0 151653 0 -151653
-    20 | Wed Dec 29 07:10:44 PST 2010 - Wed Dec 29 07:26:45 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=3 | 0 354455 1501 -355956
-    21 | Wed Dec 29 07:26:45 PST 2010 - Wed Dec 29 07:26:53 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 129811 0 0 43920
-    22 | Wed Dec 29 07:26:53 PST 2010 - Wed Dec 29 07:38:02 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=4 | 0 229204 12253 -241457
-    23 | Wed Dec 29 07:38:02 PST 2010 - Wed Dec 29 07:42:23 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL2 --size=1 --offset=0 | 0 79895 0 -79895
-    24 | Wed Dec 29 07:42:23 PST 2010 - Wed Dec 29 07:47:40 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL2 --size=2 --offset=1 | 0 71157 0 -71157
-    25 | Wed Dec 29 07:47:40 PST 2010 - Wed Dec 29 07:54:15 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=2 --offset=0 | 0 63382 0 -63382
-    26 | Wed Dec 29 07:54:15 PST 2010 - Wed Dec 29 08:03:26 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=3 --offset=0 | 0 39425 0 -39425
-    27 | Wed Dec 29 08:03:26 PST 2010 - Wed Dec 29 08:03:29 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 12253 0 0 8860
-    28 | Wed Dec 29 08:03:29 PST 2010 - Wed Dec 29 08:09:44 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=6 | 0 31502 2979 -34481
-    29 | Wed Dec 29 08:09:44 PST 2010 - Wed Dec 29 08:17:36 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=5 | 0 29336 134 -29470
-    30 | Wed Dec 29 08:17:37 PST 2010 - Wed Dec 29 08:22:54 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=1 | 0 24846 351 -25197
-    31 | Wed Dec 29 08:22:54 PST 2010 - Wed Dec 29 08:26:34 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL4 --size=2 --offset=0 | 0 10571 0 -10571
-    32 | Wed Dec 29 08:26:34 PST 2010 - Wed Dec 29 08:33:13 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=8 | 0 18924 146 -19070
-    33 | Wed Dec 29 08:33:13 PST 2010 - Wed Dec 29 08:33:15 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 3610 0 0 560
-    34 | Wed Dec 29 08:33:15 PST 2010 - Wed Dec 29 08:38:12 PST 2010 | Macro_Simulator_Filter.py --time=0.01 --steps=1000000000000 --recursive --size=7 | 0 16051 14 -16065
-    35 | Wed Dec 29 08:38:12 PST 2010 - Wed Dec 29 08:41:27 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=2 --offset=1 | 0 11592 0 -11592
-    36 | Wed Dec 29 08:41:27 PST 2010 - Wed Dec 29 08:43:27 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL1 --size=2 --offset=1 | 0 0 0 0
-    37 | Wed Dec 29 08:43:28 PST 2010 - Wed Dec 29 08:51:30 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=4 --offset=0 | 0 14131 0 -14131
-    38 | Wed Dec 29 08:51:30 PST 2010 - Wed Dec 29 08:54:06 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL4 --size=2 --offset=1 | 0 4005 0 -4005
-    39 | Wed Dec 29 08:54:06 PST 2010 - Wed Dec 29 08:54:08 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 14 0 0 0
-    40 | Wed Dec 29 08:54:08 PST 2010 - Wed Dec 29 09:30:30 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=2 | 0 54247 1757 -56004
-    41 | Wed Dec 29 09:30:30 PST 2010 - Wed Dec 29 09:34:41 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=3 --offset=1 | 0 4848 0 -4848
-    42 | Wed Dec 29 09:34:41 PST 2010 - Wed Dec 29 10:06:38 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=3 | 0 28494 204 -28698
-    43 | Wed Dec 29 10:06:38 PST 2010 - Wed Dec 29 10:10:22 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=3 --offset=2 | 0 3074 0 -3074
-    44 | Wed Dec 29 10:10:22 PST 2010 - Wed Dec 29 10:13:01 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=2 --offset=0 | 0 1302 0 -1302
-    45 | Wed Dec 29 10:13:01 PST 2010 - Wed Dec 29 10:13:02 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 1961 0 0 680
-    46 | Wed Dec 29 10:13:02 PST 2010 - Wed Dec 29 10:19:53 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=5 --offset=0 | 0 4679 0 -4679
-    47 | Wed Dec 29 10:19:53 PST 2010 - Wed Dec 29 10:48:25 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=4 | 0 16570 125 -16695
-    48 | Wed Dec 29 10:48:25 PST 2010 - Wed Dec 29 11:14:46 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=5 | 0 15638 51 -15689
-    49 | Wed Dec 29 11:14:46 PST 2010 - Wed Dec 29 11:19:49 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=4 --offset=1 | 0 2803 0 -2803
-    50 | Wed Dec 29 11:19:49 PST 2010 - Wed Dec 29 11:44:41 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=6 | 0 13404 22 -13426
-    51 | Wed Dec 29 11:44:41 PST 2010 - Wed Dec 29 11:44:43 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 198 0 0 160
-    52 | Wed Dec 29 11:44:43 PST 2010 - Wed Dec 29 11:50:20 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=4 --offset=2 | 0 2141 0 -2141
-    53 | Wed Dec 29 11:50:20 PST 2010 - Wed Dec 29 11:57:47 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=0 | 0 2826 0 -2826
-    54 | Wed Dec 29 11:57:47 PST 2010 - Wed Dec 29 12:01:23 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=3 --offset=0 | 0 987 0 -987
-    55 | Wed Dec 29 12:01:23 PST 2010 - Wed Dec 29 12:07:04 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=4 --offset=0 | 0 1413 0 -1413
-    56 | Wed Dec 29 12:07:04 PST 2010 - Wed Dec 29 12:29:59 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=8 | 0 4705 27 -4732
-    57 | Wed Dec 29 12:29:59 PST 2010 - Wed Dec 29 12:30:00 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 27 0 0 0
-    58 | Wed Dec 29 12:30:00 PST 2010 - Wed Dec 29 12:31:01 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=1 --offset=0 | 0 264 0 -264
-    59 | Wed Dec 29 12:31:01 PST 2010 - Wed Dec 29 12:53:24 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=10 | 0 3831 1 -3832
-    60 | Wed Dec 29 12:53:24 PST 2010 - Wed Dec 29 13:14:55 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=7 | 0 4300 20 -4320
-    61 | Wed Dec 29 13:14:55 PST 2010 - Wed Dec 29 13:36:21 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=12 | 0 3551 6 -3557
-    62 | Wed Dec 29 13:36:21 PST 2010 - Wed Dec 29 13:39:26 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=3 --offset=1 | 0 523 0 -523
-    63 | Wed Dec 29 13:39:26 PST 2010 - Wed Dec 29 13:39:27 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 27 0 0 0
-    64 | Wed Dec 29 13:39:27 PST 2010 - Wed Dec 29 13:44:17 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=5 | 0 681 0 -681
-    65 | Wed Dec 29 13:44:17 PST 2010 - Wed Dec 29 13:49:26 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=4 --offset=3 | 0 579 0 -579
-    66 | Wed Dec 29 13:49:27 PST 2010 - Wed Dec 29 13:57:53 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=0 | 0 760 0 -760
-    67 | Wed Dec 29 13:57:53 PST 2010 - Wed Dec 29 14:18:46 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=9 | 0 2228 3 -2231
-    68 | Wed Dec 29 14:18:46 PST 2010 - Wed Dec 29 14:20:42 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=2 --offset=1 | 0 157 0 -157
-    69 | Wed Dec 29 14:20:42 PST 2010 - Wed Dec 29 14:20:44 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 3 0 0 0
-    70 | Wed Dec 29 14:20:44 PST 2010 - Wed Dec 29 14:25:37 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=4 --offset=1 | 0 467 0 -467
-    71 | Wed Dec 29 14:25:37 PST 2010 - Wed Dec 29 14:27:09 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=3 --offset=2 | 0 117 0 -117
-    72 | Wed Dec 29 14:27:09 PST 2010 - Wed Dec 29 14:35:15 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=5 | 0 586 0 -586
-    73 | Wed Dec 29 14:35:15 PST 2010 - Wed Dec 29 14:36:16 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=2 --offset=0 | 0 84 0 -84
-    74 | Wed Dec 29 14:36:16 PST 2010 - Wed Dec 29 14:56:19 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=15 | 0 1497 0 -1497
-    75 | Wed Dec 29 14:56:19 PST 2010 - Wed Dec 29 14:56:20 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-    76 | Wed Dec 29 14:56:20 PST 2010 - Wed Dec 29 14:59:27 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=3 --offset=2 | 0 195 0 -195
-    77 | Wed Dec 29 14:59:27 PST 2010 - Wed Dec 29 15:19:29 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=11 | 0 1307 1 -1308
-    78 | Wed Dec 29 15:19:29 PST 2010 - Wed Dec 29 15:39:19 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=16 | 0 1168 1 -1169
-    79 | Wed Dec 29 15:39:19 PST 2010 - Wed Dec 29 15:59:12 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=14 | 0 1076 1 -1077
-    80 | Wed Dec 29 15:59:12 PST 2010 - Wed Dec 29 16:00:02 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL1 --size=2 --offset=0 | 0 0 0 0
-    81 | Wed Dec 29 16:00:02 PST 2010 - Wed Dec 29 16:00:04 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 3 0 0 0
-    82 | Wed Dec 29 16:00:04 PST 2010 - Wed Dec 29 16:05:18 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=4 --offset=2 | 0 239 0 -239
-    83 | Wed Dec 29 16:05:18 PST 2010 - Wed Dec 29 16:12:55 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=1 | 0 225 0 -225
-    84 | Wed Dec 29 16:12:55 PST 2010 - Wed Dec 29 16:32:28 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=13 | 0 740 0 -740
-    85 | Wed Dec 29 16:32:28 PST 2010 - Wed Dec 29 16:52:13 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=18 | 0 550 1 -551
-    86 | Wed Dec 29 16:52:13 PST 2010 - Wed Dec 29 16:59:55 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=4 | 0 185 0 -185
-    87 | Wed Dec 29 16:59:55 PST 2010 - Wed Dec 29 16:59:56 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-    88 | Wed Dec 29 16:59:56 PST 2010 - Wed Dec 29 17:19:34 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=20 | 0 514 0 -514
-    89 | Wed Dec 29 17:19:34 PST 2010 - Wed Dec 29 17:25:01 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=5 --offset=0 | 0 99 0 -99
-    90 | Wed Dec 29 17:25:02 PST 2010 - Wed Dec 29 17:27:14 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=4 --offset=3 | 0 28 0 -28
-    91 | Wed Dec 29 17:27:14 PST 2010 - Wed Dec 29 17:46:38 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=24 | 0 396 1 -397
-    92 | Wed Dec 29 17:46:38 PST 2010 - Wed Dec 29 17:47:37 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=1 --offset=0 | 0 34 0 -34
-    93 | Wed Dec 29 17:47:37 PST 2010 - Wed Dec 29 17:47:38 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-    94 | Wed Dec 29 17:47:38 PST 2010 - Wed Dec 29 17:52:16 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=4 --offset=3 | 0 99 0 -99
-    95 | Wed Dec 29 17:52:16 PST 2010 - Wed Dec 29 17:53:10 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL3 --size=2 --offset=0 | 0 0 0 0
-    96 | Wed Dec 29 17:53:10 PST 2010 - Wed Dec 29 18:00:07 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=2 | 0 94 0 -94
-    97 | Wed Dec 29 18:00:07 PST 2010 - Wed Dec 29 18:18:59 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=17 | 0 257 0 -257
-    98 | Wed Dec 29 18:18:59 PST 2010 - Wed Dec 29 18:38:16 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=19 | 0 253 1 -254
-    99 | Wed Dec 29 18:38:16 PST 2010 - Wed Dec 29 18:38:17 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-   100 | Wed Dec 29 18:38:17 PST 2010 - Wed Dec 29 18:38:22 PST 2010 | Reverse_Engineer_Filter.py | 0 2 0 -2
-   101 | Wed Dec 29 18:38:22 PST 2010 - Wed Dec 29 18:40:02 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=3 --offset=0 | 0 21 0 -21
-   102 | Wed Dec 29 18:40:02 PST 2010 - Wed Dec 29 18:58:38 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=22 | 0 184 0 -184
-   103 | Wed Dec 29 18:58:38 PST 2010 - Wed Dec 29 19:00:32 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=3 --offset=0 | 0 27 0 -27
-   104 | Wed Dec 29 19:00:32 PST 2010 - Wed Dec 29 19:19:01 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=21 | 0 161 0 -161
-   105 | Wed Dec 29 19:19:01 PST 2010 - Wed Dec 29 19:19:02 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   106 | Wed Dec 29 19:19:02 PST 2010 - Wed Dec 29 19:40:04 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=23 | 0 140 0 -140
-   107 | Wed Dec 29 19:40:04 PST 2010 - Wed Dec 29 19:47:02 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=6 --offset=3 | 0 49 0 -49
-   108 | Wed Dec 29 19:47:02 PST 2010 - Wed Dec 29 19:47:42 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL3 --size=1 --offset=0 | 0 0 0 0
-   109 | Wed Dec 29 19:47:42 PST 2010 - Wed Dec 29 19:49:08 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=3 --offset=1 | 0 2 0 -2
-   110 | Wed Dec 29 19:49:08 PST 2010 - Wed Dec 29 19:54:14 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=5 --offset=2 | 0 36 0 -36
-   111 | Wed Dec 29 19:54:14 PST 2010 - Wed Dec 29 19:54:15 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   112 | Wed Dec 29 19:54:15 PST 2010 - Wed Dec 29 20:02:03 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=0 | 0 42 0 -42
-   113 | Wed Dec 29 20:02:03 PST 2010 - Wed Dec 29 20:08:01 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=5 --offset=3 | 0 19 0 -19
-   114 | Wed Dec 29 20:08:01 PST 2010 - Wed Dec 29 20:10:29 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=4 --offset=0 | 0 8 0 -8
-   115 | Wed Dec 29 20:10:29 PST 2010 - Wed Dec 29 20:12:17 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=3 --offset=2 | 0 13 0 -13
-   116 | Wed Dec 29 20:12:17 PST 2010 - Wed Dec 29 20:30:39 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=25 | 0 75 0 -75
-   117 | Wed Dec 29 20:30:39 PST 2010 - Wed Dec 29 20:30:41 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   118 | Wed Dec 29 20:30:41 PST 2010 - Wed Dec 29 20:35:01 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=5 --offset=4 | 0 10 0 -10
-   119 | Wed Dec 29 20:35:01 PST 2010 - Wed Dec 29 20:38:19 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=4 --offset=0 | 0 9 0 -9
-   120 | Wed Dec 29 20:38:19 PST 2010 - Wed Dec 29 20:45:36 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=1 | 0 24 0 -24
-   121 | Wed Dec 29 20:45:36 PST 2010 - Wed Dec 29 20:51:20 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=3 | 0 2 0 -2
-   122 | Wed Dec 29 20:51:20 PST 2010 - Wed Dec 29 20:57:21 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=5 --offset=4 | 0 5 0 -5
-   123 | Wed Dec 29 20:57:21 PST 2010 - Wed Dec 29 20:57:22 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   124 | Wed Dec 29 20:57:22 PST 2010 - Wed Dec 29 21:03:13 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=5 --offset=2 | 0 4 0 -4
-   125 | Wed Dec 29 21:03:13 PST 2010 - Wed Dec 29 21:06:17 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=5 --offset=3 | 0 0 0 0
-   126 | Wed Dec 29 21:06:17 PST 2010 - Wed Dec 29 21:09:11 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=4 --offset=3 | 0 3 0 -3
-   127 | Wed Dec 29 21:09:11 PST 2010 - Wed Dec 29 21:11:23 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=4 --offset=1 | 0 3 0 -3
-   128 | Wed Dec 29 21:11:23 PST 2010 - Wed Dec 29 21:16:59 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=5 --offset=4 | 0 5 0 -5
-   129 | Wed Dec 29 21:16:59 PST 2010 - Wed Dec 29 21:17:00 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   130 | Wed Dec 29 21:17:00 PST 2010 - Wed Dec 29 21:17:57 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL3 --size=2 --offset=1 | 0 0 0 0
-   131 | Wed Dec 29 21:17:57 PST 2010 - Wed Dec 29 21:21:00 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=4 --offset=1 | 0 0 0 0
-   132 | Wed Dec 29 21:21:00 PST 2010 - Wed Dec 29 21:28:55 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=5 | 0 10 0 -10
-   133 | Wed Dec 29 21:28:55 PST 2010 - Wed Dec 29 21:37:17 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=2 | 0 10 0 -10
-   134 | Wed Dec 29 21:37:17 PST 2010 - Wed Dec 29 21:41:16 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=0 | 0 7 0 -7
-   135 | Wed Dec 29 21:41:16 PST 2010 - Wed Dec 29 21:41:17 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   136 | Wed Dec 29 21:41:17 PST 2010 - Wed Dec 29 21:45:25 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=2 | 0 0 0 0
-   137 | Wed Dec 29 21:45:25 PST 2010 - Wed Dec 29 21:51:36 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=5 | 0 9 0 -9
-   138 | Wed Dec 29 21:51:37 PST 2010 - Wed Dec 29 21:53:59 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=4 --offset=2 | 0 0 0 0
-   139 | Wed Dec 29 21:53:59 PST 2010 - Wed Dec 29 22:01:43 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=3 | 0 5 0 -5
-   140 | Wed Dec 29 22:01:43 PST 2010 - Wed Dec 29 22:06:02 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=4 | 0 1 0 -1
-   141 | Wed Dec 29 22:06:02 PST 2010 - Wed Dec 29 22:06:04 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   142 | Wed Dec 29 22:06:04 PST 2010 - Wed Dec 29 22:11:52 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=5 --offset=3 | 0 3 0 -3
-   143 | Wed Dec 29 22:11:52 PST 2010 - Wed Dec 29 22:12:50 PST 2010 | CTL_Filter.py --time=0.01 --type=CTL4 --size=1 --offset=0 | 0 0 0 0
-   144 | Wed Dec 29 22:12:50 PST 2010 - Wed Dec 29 22:17:53 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL2 --size=5 --offset=1 | 0 11 0 -11
-   145 | Wed Dec 29 22:17:53 PST 2010 - Wed Dec 29 22:22:13 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=5 --offset=2 | 0 3 0 -3
-   146 | Wed Dec 29 22:22:13 PST 2010 - Wed Dec 29 22:30:16 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=6 --offset=4 | 0 4 0 -4
-   147 | Wed Dec 29 22:30:16 PST 2010 - Wed Dec 29 22:30:17 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   148 | Wed Dec 29 22:30:17 PST 2010 - Wed Dec 29 22:33:23 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=4 --offset=2 | 0 2 0 -2
-   149 | Wed Dec 29 22:33:23 PST 2010 - Wed Dec 29 22:36:17 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=5 --offset=2 | 0 1 0 -1
-   150 | Wed Dec 29 22:36:17 PST 2010 - Wed Dec 29 22:38:07 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=3 --offset=1 | 0 7 0 -7
-   151 | Wed Dec 29 22:38:07 PST 2010 - Wed Dec 29 22:44:00 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=1 | 0 3 0 -3
-   152 | Wed Dec 29 22:44:00 PST 2010 - Wed Dec 29 22:49:30 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=5 --offset=1 | 0 5 0 -5
-   153 | Wed Dec 29 22:49:30 PST 2010 - Wed Dec 29 22:49:32 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   154 | Wed Dec 29 22:49:32 PST 2010 - Wed Dec 29 22:52:32 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=5 --offset=0 | 0 2 0 -2
-   155 | Wed Dec 29 22:52:32 PST 2010 - Wed Dec 29 22:58:58 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=2 | 0 1 0 -1
-   156 | Wed Dec 29 22:58:58 PST 2010 - Wed Dec 29 23:02:15 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=5 --offset=4 | 0 0 0 0
-   157 | Wed Dec 29 23:02:15 PST 2010 - Wed Dec 29 23:07:58 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL4 --size=5 --offset=0 | 0 1 0 -1
-   158 | Wed Dec 29 23:07:58 PST 2010 - Wed Dec 29 23:27:27 PST 2010 | Macro_Simulator_Filter.py --time=0.1 --steps=1000000000000 --recursive --size=1 | 0 492 16 -508
-   159 | Wed Dec 29 23:27:27 PST 2010 - Wed Dec 29 23:27:28 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 16 0 0 0
-   160 | Wed Dec 29 23:27:29 PST 2010 - Wed Dec 29 23:30:22 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=5 --offset=1 | 0 3 0 -3
-   161 | Wed Dec 29 23:30:22 PST 2010 - Wed Dec 29 23:34:43 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=5 --offset=1 | 0 0 0 0
-   162 | Wed Dec 29 23:34:43 PST 2010 - Wed Dec 29 23:35:44 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=2 --offset=1 | 0 0 0 0
-   163 | Wed Dec 29 23:35:44 PST 2010 - Wed Dec 29 23:39:59 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=5 --offset=3 | 0 0 0 0
-   164 | Wed Dec 29 23:39:59 PST 2010 - Wed Dec 29 23:46:03 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=6 --offset=4 | 0 1 0 -1
-   165 | Wed Dec 29 23:46:03 PST 2010 - Wed Dec 29 23:46:04 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   166 | Wed Dec 29 23:46:04 PST 2010 - Wed Dec 29 23:49:43 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=1 | 0 0 0 0
-   167 | Wed Dec 29 23:49:43 PST 2010 - Wed Dec 29 23:53:47 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=6 --offset=3 | 0 0 0 0
-   168 | Wed Dec 29 23:53:47 PST 2010 - Wed Dec 29 23:54:27 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=1 --offset=0 | 0 0 0 0
-   169 | Wed Dec 29 23:54:27 PST 2010 - Wed Dec 29 23:55:06 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL3 --size=1 --offset=0 | 0 0 0 0
-   170 | Wed Dec 29 23:55:06 PST 2010 - Wed Dec 29 23:55:23 PST 2010 | Macro_Simulator_Filter.py --time=0.001 --steps=1000000000000 --recursive --size=1 | 0 0 0 0
-   171 | Wed Dec 29 23:55:23 PST 2010 - Wed Dec 29 23:55:24 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 0 0 0 0
-   172 | Wed Dec 29 23:55:24 PST 2010 - Wed Dec 29 23:56:20 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=2 --offset=1 | 0 0 0 0
-   173 | Wed Dec 29 23:56:20 PST 2010 - Wed Dec 29 23:57:10 PST 2010 | CTL_Filter.py --time=0.1 --type=CTL1 --size=2 --offset=0 | 0 0 0 0
-   174 | Thu Dec 30 00:29:38 PST 2010 - Thu Dec 30 03:36:11 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=1 | 0 41 40 -81
-   175 | Thu Dec 30 03:36:11 PST 2010 - Thu Dec 30 03:36:12 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 40 0 0 0
-   176 | Thu Dec 30 03:36:13 PST 2010 - Thu Dec 30 06:41:51 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=2 | 0 606 34 -640
-   177 | Thu Dec 30 06:41:51 PST 2010 - Thu Dec 30 06:41:52 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 34 0 0 20
-   178 | Thu Dec 30 06:41:52 PST 2010 - Thu Dec 30 09:47:45 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=3 | 0 425 20 -445
-   179 | Thu Dec 30 09:47:45 PST 2010 - Thu Dec 30 09:47:47 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 20 0 0 0
-   180 | Thu Dec 30 09:47:47 PST 2010 - Thu Dec 30 12:54:30 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=4 | 0 473 16 -489
-   181 | Thu Dec 30 12:54:31 PST 2010 - Thu Dec 30 12:54:32 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 16 0 0 0
-   182 | Thu Dec 30 12:54:32 PST 2010 - Thu Dec 30 15:59:35 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=5 | 0 382 21 -403
-   183 | Thu Dec 30 15:59:36 PST 2010 - Thu Dec 30 15:59:37 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 21 0 0 0
-   184 | Thu Dec 30 15:59:37 PST 2010 - Thu Dec 30 19:04:27 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=6 | 0 403 10 -413
-   185 | Thu Dec 30 19:04:27 PST 2010 - Thu Dec 30 19:04:28 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 10 0 0 0
-   186 | Thu Dec 30 19:04:28 PST 2010 - Thu Dec 30 22:10:09 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=7 | 0 195 2 -197
-   187 | Thu Dec 30 22:10:09 PST 2010 - Thu Dec 30 22:10:11 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 2 0 0 0
-   188 | Thu Dec 30 22:10:11 PST 2010 - Fri Dec 31 01:14:38 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=8 | 0 146 2 -148
-   189 | Fri Dec 31 01:14:38 PST 2010 - Fri Dec 31 01:14:40 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 2 0 0 0
-   190 | Fri Dec 31 01:14:40 PST 2010 - Fri Dec 31 04:17:49 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=9 | 0 74 3 -77
-   191 | Fri Dec 31 04:17:49 PST 2010 - Fri Dec 31 04:17:51 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 3 0 0 0
-   192 | Fri Dec 31 04:17:51 PST 2010 - Fri Dec 31 07:21:08 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=10 | 0 210 1 -211
-   193 | Fri Dec 31 07:21:08 PST 2010 - Fri Dec 31 07:21:09 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-   194 | Fri Dec 31 07:21:09 PST 2010 - Fri Dec 31 10:24:27 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=11 | 0 78 0 -78
-   195 | Fri Dec 31 10:24:27 PST 2010 - Fri Dec 31 13:26:39 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=12 | 0 513 0 -513
-   196 | Fri Dec 31 13:26:39 PST 2010 - Fri Dec 31 16:28:44 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=13 | 0 41 0 -41
-   197 | Fri Dec 31 16:28:44 PST 2010 - Fri Dec 31 19:30:18 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=14 | 0 184 0 -184
-   198 | Fri Dec 31 19:30:18 PST 2010 - Fri Dec 31 22:30:47 PST 2010 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=15 | 0 467 2 -469
-   199 | Fri Dec 31 22:30:48 PST 2010 - Fri Dec 31 22:30:49 PST 2010 | Assign_Undecideds_Filter --next_machine_number=0 | 2 0 0 0
-   200 | Fri Dec 31 22:30:49 PST 2010 - Sat Jan 1 01:31:19 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=16 | 0 90 1 -91
-   201 | Sat Jan 1 01:31:19 PST 2011 - Sat Jan 1 01:31:20 PST 2011 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-   202 | Sat Jan 1 01:31:20 PST 2011 - Sat Jan 1 04:32:09 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=17 | 0 55 0 -55
-   203 | Sat Jan 1 04:32:09 PST 2011 - Sat Jan 1 07:32:18 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=18 | 0 103 0 -103
-   204 | Sat Jan 1 07:32:18 PST 2011 - Sat Jan 1 10:32:11 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=19 | 0 44 0 -44
-   205 | Sat Jan 1 10:32:11 PST 2011 - Sat Jan 1 13:31:50 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=20 | 0 311 1 -312
-   206 | Sat Jan 1 13:31:50 PST 2011 - Sat Jan 1 13:31:52 PST 2011 | Assign_Undecideds_Filter --next_machine_number=0 | 1 0 0 0
-   207 | Sat Jan 1 13:31:52 PST 2011 - Sat Jan 1 16:31:03 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=21 | 0 328 0 -328
-   208 | Sat Jan 1 16:31:03 PST 2011 - Sat Jan 1 19:29:51 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=22 | 0 61 0 -61
-   209 | Sat Jan 1 19:29:51 PST 2011 - Sat Jan 1 22:28:44 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=23 | 0 19 0 -19
-   210 | Sat Jan 1 22:28:44 PST 2011 - Sun Jan 2 01:26:38 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=24 | 0 218 0 -218
-   211 | Sun Jan 2 01:26:38 PST 2011 - Sun Jan 2 04:24:52 PST 2011 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --size=25 | 0 6 0 -6
+     1 g | s | Enumerate_Filter_Parallel 24 Enum.2.5.0 --states=2 --symbols=5 --steps=0 --time=0.00015 --stack_mult=100000 --checkpoint_interval=1000000 | Wed Mar 9 00:11:56 PST 2011 | 564 | 1726530 2215671 0 6813304
+     2 g | p 24 | Dual_Machine_Filter.py --tape=100 --steps=100 | Wed Mar 9 00:21:45 PST 2011 | 49 | 0 528034 1906523 -2434557
+     3 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:22:35 PST 2011 | 125 | 1906523 458664 689042 4281075
+     4 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:24:41 PST 2011 | 138 | 2595565 440100 124575 4341336
+     5 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:27:01 PST 2011 | 150 | 2720140 307913 -682546 3235025
+     6 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:29:33 PST 2011 | 127 | 2037594 193526 -788278 1839878
+     7 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:31:42 PST 2011 | 189 | 1249316 397020 1583409 3786875
+     8 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:34:54 PST 2011 | 591 | 2832725 2235619 9311562 20202294
+     9 g | p 24 | Find_New_TM_Filter --tape=100 --steps=100 --next_machine_number=0 | Wed Mar 9 00:44:52 PST 2011 | 286 | 12144287 0 -12144287 0
+    10 f | p 24 | Reverse_Engineer_Filter.py | Wed Mar 9 00:50:15 PST 2011 | 289 | 0 3896898 0 -3896898
+    11 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=1 | Wed Mar 9 00:55:10 PST 2011 | 2024 | 0 7523741 615 -7524356
+    12 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 01:28:59 PST 2011 | 55 | 615 0 -615 400
+    13 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=2 | Wed Mar 9 01:29:57 PST 2011 | 1279 | 0 13605720 19632 -13625352
+    14 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 01:51:19 PST 2011 | 45 | 19632 0 -19632 6700
+    15 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=3 | Wed Mar 9 01:52:06 PST 2011 | 787 | 0 5588960 29932 -5618892
+    16 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 02:05:15 PST 2011 | 40 | 29932 0 -29932 9340
+    17 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=4 | Wed Mar 9 02:05:56 PST 2011 | 528 | 0 3689857 42692 -3732549
+    18 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 02:14:45 PST 2011 | 35 | 42692 0 -42692 13040
+    19 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=5 | Wed Mar 9 02:15:21 PST 2011 | 407 | 0 363483 16147 -379630
+    20 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 02:22:10 PST 2011 | 15 | 16147 0 -16147 6180
+    21 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.001 --steps=100 --block-size=6 | Wed Mar 9 02:22:26 PST 2011 | 385 | 0 950705 14750 -965455
+    22 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 02:28:52 PST 2011 | 24 | 14750 0 -14750 4960
+    23 f | p 24 | Reverse_Engineer_Filter.py | Wed Mar 9 02:29:17 PST 2011 | 61 | 0 6424 0 -6424
+    24 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL1 --block-size=1 --offset=0 | Wed Mar 9 02:30:19 PST 2011 | 660 | 0 1668008 0 -1668008
+    25 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL2 --block-size=1 --offset=0 | Wed Mar 9 02:41:20 PST 2011 | 648 | 0 984290 0 -984290
+    26 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL3 --block-size=1 --offset=0 | Wed Mar 9 02:52:08 PST 2011 | 443 | 0 52764 0 -52764
+    27 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL4 --block-size=1 --offset=0 | Wed Mar 9 02:59:32 PST 2011 | 585 | 0 43412 0 -43412
+    28 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL1 --block-size=2 --offset=0 | Wed Mar 9 03:09:18 PST 2011 | 423 | 0 380344 0 -380344
+    29 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL1 --block-size=2 --offset=1 | Wed Mar 9 03:16:22 PST 2011 | 399 | 0 173521 0 -173521
+    30 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL2 --block-size=2 --offset=0 | Wed Mar 9 03:23:01 PST 2011 | 530 | 0 804949 0 -804949
+    31 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL2 --block-size=2 --offset=1 | Wed Mar 9 03:31:51 PST 2011 | 398 | 0 144694 0 -144694
+    32 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL3 --block-size=2 --offset=0 | Wed Mar 9 03:38:30 PST 2011 | 285 | 0 20949 0 -20949
+    33 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL3 --block-size=2 --offset=1 | Wed Mar 9 03:43:16 PST 2011 | 290 | 0 14288 0 -14288
+    34 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL4 --block-size=2 --offset=0 | Wed Mar 9 03:48:07 PST 2011 | 433 | 0 38854 0 -38854
+    35 f | p 24 | CTL_Filter.py --time=0.01 --type=CTL4 --block-size=2 --offset=1 | Wed Mar 9 03:55:21 PST 2011 | 439 | 0 19663 0 -19663
+    36 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=1 | Wed Mar 9 04:02:41 PST 2011 | 781 | 0 503429 51661 -555090
+    37 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:15:42 PST 2011 | 6 | 51661 0 -51661 18280
+    38 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=2 | Wed Mar 9 04:15:48 PST 2011 | 548 | 0 501113 11631 -512744
+    39 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:24:56 PST 2011 | 5 | 11631 0 -11631 6260
+    40 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=3 | Wed Mar 9 04:25:02 PST 2011 | 365 | 0 313496 2789 -316285
+    41 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:31:07 PST 2011 | 31 | 2789 0 -2789 840
+    42 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=4 | Wed Mar 9 04:31:38 PST 2011 | 271 | 0 189394 554 -189948
+    43 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:36:10 PST 2011 | 28 | 554 0 -554 180
+    44 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=5 | Wed Mar 9 04:36:38 PST 2011 | 211 | 0 33215 151 -33366
+    45 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:40:10 PST 2011 | 27 | 151 0 -151 0
+    46 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=6 | Wed Mar 9 04:40:37 PST 2011 | 205 | 0 31901 107 -32008
+    47 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:44:02 PST 2011 | 6 | 107 0 -107 40
+    48 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=7 | Wed Mar 9 04:44:08 PST 2011 | 174 | 0 16064 16 -16080
+    49 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:47:02 PST 2011 | 3 | 16 0 -16 0
+    50 f | p 24 | Macro_Simulator_Filter.py --recursive --time=0.01 --steps=1000 --block-size=8 | Wed Mar 9 04:47:05 PST 2011 | 173 | 0 19189 22 -19211
+    51 f | p 24 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 04:49:58 PST 2011 | 4 | 22 0 -22 0
+    52 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=1 --offset=0 | Wed Mar 9 04:50:02 PST 2011 | 41 | 0 7569 0 -7569
+    53 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=1 --offset=0 | Wed Mar 9 04:50:43 PST 2011 | 55 | 0 3539 0 -3539
+    54 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=1 --offset=0 | Wed Mar 9 04:51:38 PST 2011 | 42 | 0 51 0 -51
+    55 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=1 --offset=0 | Wed Mar 9 04:52:20 PST 2011 | 63 | 0 0 0 0
+    56 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=2 --offset=0 | Wed Mar 9 04:53:23 PST 2011 | 52 | 0 2009 0 -2009
+    57 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=2 --offset=1 | Wed Mar 9 04:54:15 PST 2011 | 51 | 0 835 0 -835
+    58 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=2 --offset=0 | Wed Mar 9 04:55:06 PST 2011 | 118 | 0 15699 0 -15699
+    59 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=2 --offset=1 | Wed Mar 9 04:57:04 PST 2011 | 84 | 0 3382 0 -3382
+    60 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=2 --offset=0 | Wed Mar 9 04:58:28 PST 2011 | 59 | 0 324 0 -324
+    61 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=2 --offset=1 | Wed Mar 9 04:59:27 PST 2011 | 64 | 0 10 0 -10
+    62 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=2 --offset=0 | Wed Mar 9 05:00:31 PST 2011 | 102 | 0 2221 0 -2221
+    63 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=2 --offset=1 | Wed Mar 9 05:02:13 PST 2011 | 120 | 0 681 0 -681
+    64 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=3 --offset=0 | Wed Mar 9 05:04:14 PST 2011 | 108 | 0 5384 0 -5384
+    65 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=3 --offset=1 | Wed Mar 9 05:06:02 PST 2011 | 89 | 0 1667 0 -1667
+    66 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=3 --offset=2 | Wed Mar 9 05:07:31 PST 2011 | 89 | 0 2276 0 -2276
+    67 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=3 --offset=0 | Wed Mar 9 05:09:01 PST 2011 | 149 | 0 11701 0 -11701
+    68 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=3 --offset=1 | Wed Mar 9 05:11:30 PST 2011 | 134 | 0 3298 0 -3298
+    69 f | p 24 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=3 --offset=2 | Wed Mar 9 05:13:44 PST 2011 | 140 | 0 2006 0 -2006
+    70 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=3 --offset=0 | Wed Mar 9 09:39:58 PST 2011 | 152 | 0 825 0 -825
+    71 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=3 --offset=1 | Wed Mar 9 09:42:30 PST 2011 | 167 | 0 192 0 -192
+    72 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=3 --offset=2 | Wed Mar 9 09:45:17 PST 2011 | 176 | 0 112 0 -112
+    73 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=3 --offset=0 | Wed Mar 9 09:48:13 PST 2011 | 322 | 0 2488 0 -2488
+    74 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=3 --offset=1 | Wed Mar 9 09:53:35 PST 2011 | 380 | 0 1460 0 -1460
+    75 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=3 --offset=2 | Wed Mar 9 09:59:56 PST 2011 | 284 | 0 587 0 -587
+    76 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=1 | Wed Mar 9 10:04:40 PST 2011 | 2086 | 0 6953 918 -7871
+    77 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 10:39:26 PST 2011 | 2 | 918 0 -918 440
+    78 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=2 | Wed Mar 9 10:39:28 PST 2011 | 1749 | 0 29086 525 -29611
+    79 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 11:08:37 PST 2011 | 1 | 525 0 -525 120
+    80 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=3 | Wed Mar 9 11:08:38 PST 2011 | 1612 | 0 17310 184 -17494
+    81 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 11:35:30 PST 2011 | 1 | 184 0 -184 40
+    82 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=4 | Wed Mar 9 11:35:31 PST 2011 | 1543 | 0 9840 59 -9899
+    83 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 12:01:14 PST 2011 | 1 | 59 0 -59 0
+    84 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=5 | Wed Mar 9 12:01:15 PST 2011 | 1442 | 0 11059 36 -11095
+    85 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 12:25:17 PST 2011 | 12 | 36 0 -36 0
+    86 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=6 | Wed Mar 9 12:25:29 PST 2011 | 1379 | 0 11386 20 -11406
+    87 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 12:48:28 PST 2011 | 1 | 20 0 -20 0
+    88 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=7 | Wed Mar 9 12:48:29 PST 2011 | 1325 | 0 4241 7 -4248
+    89 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 13:10:34 PST 2011 | 2 | 7 0 -7 0
+    90 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=8 | Wed Mar 9 13:10:36 PST 2011 | 1320 | 0 3627 6 -3633
+    91 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 13:32:36 PST 2011 | 23 | 6 0 -6 0
+    92 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=4 --offset=0 | Wed Mar 9 13:32:59 PST 2011 | 161 | 0 1068 0 -1068
+    93 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=4 --offset=1 | Wed Mar 9 13:35:40 PST 2011 | 149 | 0 454 0 -454
+    94 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=4 --offset=2 | Wed Mar 9 13:38:09 PST 2011 | 169 | 0 172 0 -172
+    95 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=4 --offset=3 | Wed Mar 9 13:40:58 PST 2011 | 184 | 0 431 0 -431
+    96 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=4 --offset=0 | Wed Mar 9 13:44:02 PST 2011 | 295 | 0 3437 0 -3437
+    97 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=4 --offset=1 | Wed Mar 9 13:48:57 PST 2011 | 245 | 0 1778 0 -1778
+    98 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=4 --offset=2 | Wed Mar 9 13:53:02 PST 2011 | 303 | 0 1303 0 -1303
+    99 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=4 --offset=3 | Wed Mar 9 13:58:05 PST 2011 | 287 | 0 508 0 -508
+   100 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=4 --offset=0 | Wed Mar 9 14:02:53 PST 2011 | 176 | 0 1109 0 -1109
+   101 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=4 --offset=1 | Wed Mar 9 14:05:49 PST 2011 | 200 | 0 153 0 -153
+   102 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=4 --offset=2 | Wed Mar 9 14:09:09 PST 2011 | 215 | 0 44 0 -44
+   103 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=4 --offset=3 | Wed Mar 9 14:12:45 PST 2011 | 201 | 0 24 0 -24
+   104 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=4 --offset=0 | Wed Mar 9 14:16:06 PST 2011 | 328 | 0 1122 0 -1122
+   105 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=4 --offset=1 | Wed Mar 9 14:21:34 PST 2011 | 356 | 0 488 0 -488
+   106 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=4 --offset=2 | Wed Mar 9 14:27:31 PST 2011 | 320 | 0 236 0 -236
+   107 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=4 --offset=3 | Wed Mar 9 14:32:51 PST 2011 | 319 | 0 144 0 -144
+   108 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=5 --offset=0 | Wed Mar 9 14:38:10 PST 2011 | 185 | 0 140 0 -140
+   109 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=5 --offset=1 | Wed Mar 9 14:41:15 PST 2011 | 196 | 0 28 0 -28
+   110 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=5 --offset=2 | Wed Mar 9 14:44:31 PST 2011 | 201 | 0 16 0 -16
+   111 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=5 --offset=3 | Wed Mar 9 14:47:52 PST 2011 | 193 | 0 16 0 -16
+   112 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=5 --offset=4 | Wed Mar 9 14:51:06 PST 2011 | 196 | 0 27 0 -27
+   113 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=5 --offset=0 | Wed Mar 9 14:54:22 PST 2011 | 344 | 0 353 0 -353
+   114 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=5 --offset=1 | Wed Mar 9 15:00:07 PST 2011 | 311 | 0 43 0 -43
+   115 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=5 --offset=2 | Wed Mar 9 15:05:18 PST 2011 | 329 | 0 86 0 -86
+   116 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=5 --offset=3 | Wed Mar 9 15:10:47 PST 2011 | 324 | 0 41 0 -41
+   117 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=5 --offset=4 | Wed Mar 9 15:16:11 PST 2011 | 364 | 0 28 0 -28
+   118 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=5 --offset=0 | Wed Mar 9 15:22:16 PST 2011 | 285 | 0 1801 0 -1801
+   119 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=5 --offset=1 | Wed Mar 9 15:27:01 PST 2011 | 298 | 0 187 0 -187
+   120 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=5 --offset=2 | Wed Mar 9 15:31:59 PST 2011 | 291 | 0 126 0 -126
+   121 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=5 --offset=3 | Wed Mar 9 15:36:50 PST 2011 | 259 | 0 98 0 -98
+   122 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=5 --offset=4 | Wed Mar 9 15:41:09 PST 2011 | 277 | 0 66 0 -66
+   123 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=5 --offset=0 | Wed Mar 9 15:45:46 PST 2011 | 377 | 0 12 0 -12
+   124 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=5 --offset=1 | Wed Mar 9 15:52:03 PST 2011 | 404 | 0 3 0 -3
+   125 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=5 --offset=2 | Wed Mar 9 15:58:47 PST 2011 | 382 | 0 3 0 -3
+   126 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=5 --offset=3 | Wed Mar 9 16:05:09 PST 2011 | 390 | 0 5 0 -5
+   127 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=5 --offset=4 | Wed Mar 9 16:11:39 PST 2011 | 397 | 0 6 0 -6
+   128 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=0 | Wed Mar 9 16:18:16 PST 2011 | 225 | 0 736 0 -736
+   129 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=1 | Wed Mar 9 16:22:01 PST 2011 | 245 | 0 79 0 -79
+   130 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=2 | Wed Mar 9 16:26:06 PST 2011 | 243 | 0 25 0 -25
+   131 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=3 | Wed Mar 9 16:30:09 PST 2011 | 250 | 0 38 0 -38
+   132 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=4 | Wed Mar 9 16:34:19 PST 2011 | 243 | 0 80 0 -80
+   133 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL1 --block-size=6 --offset=5 | Wed Mar 9 16:38:22 PST 2011 | 268 | 0 508 0 -508
+   134 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=0 | Wed Mar 9 16:42:50 PST 2011 | 487 | 0 611 0 -611
+   135 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=1 | Wed Mar 9 16:50:57 PST 2011 | 447 | 0 352 0 -352
+   136 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=2 | Wed Mar 9 16:58:25 PST 2011 | 448 | 0 190 0 -190
+   137 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=3 | Wed Mar 9 17:05:53 PST 2011 | 469 | 0 116 0 -116
+   138 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=4 | Wed Mar 9 17:13:42 PST 2011 | 467 | 0 189 0 -189
+   139 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL2 --block-size=6 --offset=5 | Wed Mar 9 17:21:29 PST 2011 | 475 | 0 336 0 -336
+   140 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=0 | Wed Mar 9 17:29:24 PST 2011 | 382 | 0 1363 0 -1363
+   141 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=1 | Wed Mar 9 17:35:46 PST 2011 | 359 | 0 272 0 -272
+   142 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=2 | Wed Mar 9 17:41:46 PST 2011 | 352 | 0 97 0 -97
+   143 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=3 | Wed Mar 9 17:47:38 PST 2011 | 392 | 0 34 0 -34
+   144 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=4 | Wed Mar 9 17:54:11 PST 2011 | 375 | 0 37 0 -37
+   145 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL3 --block-size=6 --offset=5 | Wed Mar 9 18:00:26 PST 2011 | 363 | 0 36 0 -36
+   146 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=0 | Wed Mar 9 18:06:29 PST 2011 | 509 | 0 40 0 -40
+   147 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=1 | Wed Mar 9 18:14:58 PST 2011 | 446 | 0 23 0 -23
+   148 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=2 | Wed Mar 9 18:22:24 PST 2011 | 510 | 0 12 0 -12
+   149 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=3 | Wed Mar 9 18:30:54 PST 2011 | 508 | 0 11 0 -11
+   150 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=4 | Wed Mar 9 18:39:22 PST 2011 | 490 | 0 11 0 -11
+   151 f | p 16 | CTL_Filter.py --time=0.1 --type=CTL4 --block-size=6 --offset=5 | Wed Mar 9 18:47:32 PST 2011 | 535 | 0 4 0 -4
+   152 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=9 | Wed Mar 9 18:56:27 PST 2011 | 1141 | 0 1959 6 -1965
+   153 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 19:15:28 PST 2011 | 1 | 6 0 -6 0
+   154 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=10 | Wed Mar 9 19:15:29 PST 2011 | 1151 | 0 3482 5 -3487
+   155 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 19:34:40 PST 2011 | 1 | 5 0 -5 0
+   156 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=11 | Wed Mar 9 19:34:41 PST 2011 | 1121 | 0 1303 0 -1303
+   157 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=12 | Wed Mar 9 19:53:22 PST 2011 | 1090 | 0 3091 0 -3091
+   158 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=13 | Wed Mar 9 20:11:32 PST 2011 | 1102 | 0 739 0 -739
+   159 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=14 | Wed Mar 9 20:29:54 PST 2011 | 1077 | 0 1088 1 -1089
+   160 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 20:47:51 PST 2011 | 1 | 1 0 -1 0
+   161 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=15 | Wed Mar 9 20:47:52 PST 2011 | 1060 | 0 1471 0 -1471
+   162 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=16 | Wed Mar 9 21:05:32 PST 2011 | 1055 | 0 1187 0 -1187
+   163 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=17 | Wed Mar 9 21:23:07 PST 2011 | 1068 | 0 243 0 -243
+   164 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=18 | Wed Mar 9 21:40:55 PST 2011 | 1045 | 0 523 1 -524
+   165 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 21:58:20 PST 2011 | 1 | 1 0 -1 0
+   166 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=19 | Wed Mar 9 21:58:21 PST 2011 | 1044 | 0 252 0 -252
+   167 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=20 | Wed Mar 9 22:15:45 PST 2011 | 1040 | 0 499 2 -501
+   168 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Wed Mar 9 22:33:05 PST 2011 | 2 | 2 0 -2 0
+   169 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=21 | Wed Mar 9 22:33:07 PST 2011 | 1033 | 0 141 0 -141
+   170 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=22 | Wed Mar 9 22:50:20 PST 2011 | 1044 | 0 180 0 -180
+   171 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=23 | Wed Mar 9 23:07:44 PST 2011 | 1036 | 0 144 0 -144
+   172 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=24 | Wed Mar 9 23:25:00 PST 2011 | 1033 | 0 390 0 -390
+   173 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=10000 --block-size=25 | Wed Mar 9 23:42:14 PST 2011 | 1032 | 0 76 0 -76
+   174 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=1 | Thu Mar 10 00:20:38 PST 2011 | 1041 | 0 87 3 -90
+   175 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 00:37:59 PST 2011 | 31 | 3 0 -3 0
+   176 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=2 | Thu Mar 10 00:38:30 PST 2011 | 1064 | 0 110 0 -110
+   177 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=3 | Thu Mar 10 00:56:14 PST 2011 | 1039 | 0 25 0 -25
+   178 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=4 | Thu Mar 10 01:13:33 PST 2011 | 1043 | 0 68 0 -68
+   179 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=5 | Thu Mar 10 01:30:56 PST 2011 | 1040 | 0 40 0 -40
+   180 f | p 16 | Macro_Simulator_Filter.py --recursive --time=0.1 --steps=1000000000000000000 --block-size=6 | Thu Mar 10 01:48:16 PST 2011 | 1033 | 0 60 1 -61
+   181 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 02:05:29 PST 2011 | 2 | 1 0 -1 0
+   182 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=1 | Thu Mar 10 03:55:35 PST 2011 | 10461 | 0 42 46 -88
+   183 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 06:49:57 PST 2011 | 1 | 46 0 -46 0
+   184 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=2 | Thu Mar 10 06:49:58 PST 2011 | 10434 | 0 435 26 -461
+   185 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 09:43:52 PST 2011 | 1 | 26 0 -26 20
+   186 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=3 | Thu Mar 10 09:43:53 PST 2011 | 10482 | 0 370 20 -390
+   187 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 12:38:35 PST 2011 | 25 | 20 0 -20 0
+   188 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=4 | Thu Mar 10 12:39:00 PST 2011 | 10460 | 0 443 15 -458
+   189 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 15:33:20 PST 2011 | 1 | 15 0 -15 0
+   190 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=5 | Thu Mar 10 15:33:21 PST 2011 | 10430 | 0 369 23 -392
+   191 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 18:27:11 PST 2011 | 1 | 23 0 -23 0
+   192 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=6 | Thu Mar 10 18:27:12 PST 2011 | 10343 | 0 390 10 -400
+   193 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Thu Mar 10 21:19:35 PST 2011 | 2 | 10 0 -10 0
+   194 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=7 | Thu Mar 10 21:19:37 PST 2011 | 10408 | 0 218 3 -221
+   195 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Fri Mar 11 00:13:05 PST 2011 | 25 | 3 0 -3 0
+   196 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=8 | Fri Mar 11 00:13:30 PST 2011 | 10344 | 0 179 5 -184
+   197 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Fri Mar 11 03:05:54 PST 2011 | 2 | 5 0 -5 0
+   198 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=9 | Fri Mar 11 03:05:56 PST 2011 | 10341 | 0 98 0 -98
+   199 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=10 | Fri Mar 11 05:58:17 PST 2011 | 10301 | 0 281 1 -282
+   200 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Fri Mar 11 08:49:59 PST 2011 | 1 | 1 0 -1 0
+   201 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=11 | Fri Mar 11 08:50:00 PST 2011 | 10329 | 0 77 0 -77
+   202 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=12 | Fri Mar 11 11:42:09 PST 2011 | 10282 | 0 604 1 -605
+   203 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Fri Mar 11 14:33:31 PST 2011 | 1 | 1 0 -1 0
+   204 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=13 | Fri Mar 11 14:33:32 PST 2011 | 10189 | 0 42 0 -42
+   205 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=14 | Fri Mar 11 17:23:21 PST 2011 | 10198 | 0 166 0 -166
+   206 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=15 | Fri Mar 11 20:13:19 PST 2011 | 10211 | 0 481 1 -482
+   207 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Fri Mar 11 23:03:30 PST 2011 | 1 | 1 0 -1 0
+   208 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=16 | Fri Mar 11 23:03:31 PST 2011 | 10133 | 0 95 1 -96
+   209 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Sat Mar 12 01:52:24 PST 2011 | 1 | 1 0 -1 0
+   210 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=17 | Sat Mar 12 01:52:25 PST 2011 | 10144 | 0 53 1 -54
+   211 f | p 16 | Assign_Undecideds_Filter --next_machine_number=0 | Sat Mar 12 04:41:30 PST 2011 | 1 | 1 0 -1 0
+   212 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=18 | Sat Mar 12 04:41:31 PST 2011 | 10133 | 0 114 0 -114
+   213 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=19 | Sat Mar 12 07:30:25 PST 2011 | 10171 | 0 44 0 -44
+   214 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=20 | Sat Mar 12 10:19:56 PST 2011 | 10107 | 0 328 0 -328
+   215 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=21 | Sat Mar 12 13:08:23 PST 2011 | 10129 | 0 331 0 -331
+   216 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=22 | Sat Mar 12 15:57:12 PST 2011 | 10070 | 0 67 0 -67
+   217 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=23 | Sat Mar 12 18:45:02 PST 2011 | 10077 | 0 15 0 -15
+   218 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=24 | Sat Mar 12 21:32:59 PST 2011 | 10075 | 0 258 0 -258
+   219 f | p 16 | Macro_Simulator_Filter.py --recursive --time=1.0 --steps=1000000000000000000 --block-size=25 | Sun Mar 13 00:20:54 PST 2011 | 10066 | 0 7 0 -7
