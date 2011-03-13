@@ -5,11 +5,13 @@ Max Symbols       =  4098
 
 Number Total      =  126891605
 Number Halt       =   34358413
-Number Infinite   =   92525546
+Number Infinite   =   92525161
+Number Unknown    =       8031
 Number Undecided  =          0
-Number Unknown    =       7646
+Number Error      =          0
 
 Percent Halt      =  27.076979
-Percent Infinite  =  72.916996
+Percent Infinite  =  72.916692
+Percent Unknown   =   0.006329
 Percent Undecided =   0.000000
-Percent Unknown   =   0.006026
+Percent Error     =   0.000000
